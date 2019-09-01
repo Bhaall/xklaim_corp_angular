@@ -1,0 +1,234 @@
+<div ng-controller="carouselCtrl">
+	<div ng-switch="getCurrentStep()" ng-animate="'{{anim}}'" class="slide-frame" ng-swipe-left="slideNextHomeStep()" ng-swipe-right="slidePrevHomeStep()">
+		<div ng-switch-when="one">
+			<div id="homeCarousel" class="carousel slide" data-interval="false">
+				<div class="carousel-inner">
+					<div class="item active one">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1><img src="img/brand.png" class="hidden-xs" /></h1>
+								<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+								<h1 class="main">turn followers into shoppers.</h1>
+								<p>xKlaim activates and amplifies your brand's social media following to drive real-world, in-store sales.</p>
+								<p class="margin-top"><a class="btn btn-large btn-app" href="#/info" ng-click="setString(2)">GET STARTED</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="item two">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1><img src="img/brand.png" class="hidden-xs" /></h1>
+								<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+								<p>xKlaim lets you quickly create offers to activate your followers&mdash;on social networks, on mobile devices&mdash;and drive them in-store.</p>
+								<p class="margin-top"><a class="btn btn-large btn-app" href="#/info" ng-click="setString(2)">GET STARTED</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="item three">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1><img src="img/brand.png" class="hidden-xs" /></h1>
+								<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+								<p>The xKlaim app generates a virtual card on mobile devices, usable wherever credit and debit cards are accepted, and sharable with anyone. So your brand's reach is amplified beyond your own social network, into your followers' circles&mdash;and beyond.</p>
+								<p class="margin-top"><a class="btn btn-large btn-app" href="#/info" ng-click="setString(2)">GET STARTED</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="item four">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1><img src="img/brand.png" class="hidden-xs" /></h1>
+								<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+								<p>Your xKlaim dashboard displays real-time conversion metrics, so you can track offer redemptions and optimize for even better results.</p>
+								<p class="margin-top"><a class="btn btn-large btn-app" href="#/info" ng-click="setString(2)">GET STARTED</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="item five">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1><img src="img/brand.png" class="hidden-xs" /></h1>
+								<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+								<h1>if you want it, xKlaim it.</h1>
+								<p>xKlaim activates and amplifies your brand's social media following to drive real-world, in-store sales. </p>
+								<p class="margin-top"><a class="btn btn-large btn-app" href="https://itunes.apple.com/us/app/okd/id625677744?mt=8" target="_blank">GET THE APP</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<nav class="navbar navbar-default heronav" role="navigation" active-link>
+				<div class="navbar-collapse">
+					<ul class="nav navbar-nav hidden-xs">
+						<li class="active" data-slide-to="0" data-target="#homeCarousel"><a><img src="img/for-biz-icon.png" /></a></li>
+						<li data-slide-to="1" data-target="#homeCarousel"><a><img src="img/activate-icon.png" /></a></li>
+						<li data-slide-to="2" data-target="#homeCarousel"><a><img src="img/amplify-icon.png" /></a></li>
+						<li data-slide-to="3" data-target="#homeCarousel"><a><img src="img/optimize-icon.png" /></a></li>
+						<li><a ng-click="handleNext(dismiss)"><img src="img/for-me-icon.png" /></a></li>
+					</ul>
+					<ul class="nav navbar-nav hidden-lg hidden-md hidden-sm">
+						<li class="active" data-slide-to="0" data-target="#homeCarousel"><a><img src="img/for-biz-icon-sm.png" ng-src="img/for-biz-icon-sm@2x.png" width="50" height="38" /></a></li>
+						<li data-slide-to="1" data-target="#homeCarousel"><a><img src="img/activate-icon-sm.png" ng-src="img/activate-icon-sm@2x.png" width="50" height="38" /></a></li>
+						<li data-slide-to="2" data-target="#homeCarousel"><a><img src="img/amplify-icon-sm.png" ng-src="img/amplify-icon-sm@2x.png" width="50" height="38" /></a></li>
+						<li data-slide-to="3" data-target="#homeCarousel"><a><img src="img/optimize-icon-sm.png" ng-src="img/optimize-icon-sm@2x.png" width="50" height="38" /></a></li>
+						<li><a ng-click="handleNext(dismiss)"><img src="img/for-me-icon-sm.png" ng-src="img/for-me-icon-sm@2x.png" width="50" height="38" /></a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="container main-container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1 class="text-center">how xKlaim works</h1>
+					</div>
+				</div>
+			</div>
+
+			<div class="container marketing">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="headline"><h2>Real-time Offers. Real-world Results.</h2></div>
+						<p>It takes just seconds to create and activate an offer with xKlaim. The best part? Your customers can actually use xKlaim to ask for an offer&mdash;which you can respond to in real time.</p>
+					</div>
+					<div class="col-md-6">
+						<div class="headline"><h2>Social Activation, Revenue Generation.</h2></div>
+						<p>Fulfill the potential built up by your brand's social media presence. xKlaim gives you the most effective way to target followers with a desirable offer, sent at an ideal time&mdash;even to direct them to specific locations.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="headline"><h2>Mobile Reach, Delivery and Fulfillment.</h2></div>
+						<p>xKlaim lets you reach customers where they are right now: out in the world, on their mobile devices. With offers generated on-screen in the form of virtual cards, xKlaim reduces the fall-off between intention and redemption.</p>
+					</div>
+					<div class="col-md-6">
+						<div class="headline"><h2>Industry-standard Security. And Beyond.</h2></div>
+						<p>xKlaim complies with Level 1 Payment Card Industry Data Security Standards. But even beyond PCI compliance, xKlaim is redeemable only at stores you specify. Every xKlaim virtual card is time-sensitive, so unused cards expire and your money is automatically returned.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="headline"><h2>No Extra Fees. No, Really.</h2></div>
+						<p>xKlaim works just like any regular credit or debit card. When a shopper presents an xKlaim virtual card, all the cashier has to do is scan the barcode image or enter the card number. Thats it&mdash;no extra fees are charged and no software installations are needed to redeem.</p>
+					</div>
+					<div class="col-md-6">
+						<div class="headline"><h2>POS-Ready, Set, Go.</h2></div>
+						<p>From next-generation barcode scanning systems, to legacy registers, xKlaim works with virtually any point-of-sale system that accepts debit and credit cards. There's no new hardware to buy, no new software to install or integrate.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div ng-switch-when="two">
+			<div id="youCarousel" class="carousel slide" data-interval="false">
+				<div class="carousel-inner">
+					<div class="item active one">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1><img src="img/brand.png" class="hidden-xs" /></h1>
+								<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+								<h1 class="main">if you want it, xKlaim it.</h1>
+								<p>xKlaim activates and amplifies your brand's social media following to drive real-world, in-store sales. </p>
+								<p class="margin-top"><a class="btn btn-large btn-app" href="https://itunes.apple.com/us/app/okd/id625677744?mt=8" target="_blank">GET THE APP</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="item two">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1><img src="img/brand.png" class="hidden-xs" /></h1>
+								<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+								<p>xKlaim lets you get instant, must-have offers from your favorite brands. You can even ask family and friends to help fund a purchase!</p>
+								<p class="margin-top"><a class="btn btn-large btn-app" href="#/info" ng-click="setString(2)">GET STARTED</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="item three">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1><img src="img/brand.png" class="hidden-xs" /></h1>
+								<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+								<p>Get what you want instantly: xKlaim generates a virtual card, which can be used wherever credit and debit cards are accepted.</p>
+								<p class="margin-top"><a class="btn btn-large btn-app" href="#/info" ng-click="setString(2)">GET STARTED</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="item four">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1><img src="img/brand.png" class="hidden-xs" /></h1>
+								<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+								<p>Once you've got it, xKlaim it: Share your favorite offers with your favorite peeps on Facebook, Twitter or anyone from your contacts!</p>
+								<p class="margin-top"><a class="btn btn-large btn-app" href="#/info" ng-click="setString(2)">GET STARTED</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="item five">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1><img src="img/brand.png" class="hidden-xs" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+								<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" /></h1>
+								<h1>turn followers into shoppers.</h1>
+								<p>xKlaim activates and amplifies your brand's social media following to drive real-world, in-store sales.</p>
+								<p class="margin-top"><a class="btn btn-large btn-app" href="https://itunes.apple.com/us/app/okd/id625677744?mt=8" target="_blank">GET THE APP</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<nav class="navbar navbar-default heronav" role="navigation" active-link>
+				<div class="navbar-collapse">
+					<ul class="nav navbar-nav hidden-xs">
+						<li class="active" data-slide-to="0" data-target="#youCarousel"><a><img src="img/for-me-icon.png" /></a></li>
+						<li data-slide-to="1" data-target="#youCarousel"><a><img src="img/want-icon.png" /></a></li>
+						<li data-slide-to="2" data-target="#youCarousel"><a><img src="img/get-icon.png" /></a></li>
+						<li data-slide-to="3" data-target="#youCarousel"><a><img src="img/share-icon.png" /></a></li>
+						<li><a ng-click="handlePrevious()"><img src="img/for-biz-icon.png" /></a></li>
+					</ul>
+					<ul class="nav navbar-nav hidden-lg hidden-md hidden-sm">
+						<li class="active" data-slide-to="0" data-target="#youCarousel"><a><img src="img/for-me-icon-sm.png" ng-src="img/for-me-icon-sm@2x.png" width="50" height="38" /></a></li>
+						<li data-slide-to="1" data-target="#youCarousel"><a><img src="img/want-icon-sm.png" ng-src="img/want-icon-sm@2x.png" width="50" height="38" /></a></li>
+						<li data-slide-to="2" data-target="#youCarousel"><a><img src="img/get-icon-sm.png" ng-src="img/get-icon-sm@2x.png" width="50" height="38" /></a></li>
+						<li data-slide-to="3" data-target="#youCarousel"><a><img src="img/share-icon-sm.png" ng-src="img/share-icon-sm@2x.png" width="50" height="38" /></a></li>
+						<li><a ng-click="handlePrevious()"><img src="img/for-biz-icon-sm.png" ng-src="img/for-biz-icon-sm@2x.png" width="50" height="38" /></a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="container main-container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1 class="text-center">how xKlaim works</h1>
+					</div>
+				</div>
+			</div>
+
+			<div class="container marketing">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="headline"><h2>Ask and Receive.</h2></div>
+						<p>See something you want? Snap a photo and ask friends, family, or brands&mdash;if you're already following them on your social network&mdash;to help you pay for it. It's simple, it's fun and it can all happen instantly.</p>
+					</div>
+					<div class="col-md-6">
+						<div class="headline"><h2>Instant Gratification.</h2></div>
+						<p>Forget promo codes, coupons, and groups you're forced to join. With xKlaim, offers show up instantly on your phone or tablet, so you can use them in stores, right now.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="headline"><h2>It Pays to be Social.</h2></div>
+						<p>You've Liked and Followed the brands you love. With xKlaim, those brands love you right back with great offers, generated on-screen in the form of virtual cards that can be used anywhere credit and debit cards are accepted.</p>
+					</div>
+					<div class="col-md-6">
+					<div class="headline">	<h2>Beyond Industry-standard Security.</h2></div>
+						<p>xKlaim is Payment Card Industry-compliant, which means your data is encrypted using industry-standard methods, plus virtual cards are time-sensitive, so unused cards expire and your money is automatically returned.</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div ng-include src='"partials/footer-home.html"'></div>
+</div>

@@ -1,0 +1,37 @@
+<footer class="primary-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<ul class="left">
+					<li><a href="#/home" ng-click="setString(0)" class="navbar-brand"><img src="img/logo-footer.png" ng-src="img/logo-footer@2x.png" width="50" height="45" /></a></li>
+					<li><a href="https://itunes.apple.com/us/app/okd/id625677744?mt=8" target="_blank"><img src="img/app-store-footer.png" ng-src="img/app-store-footer@2x.png" width="161" height="56" /></a></li>
+				</ul>
+				<ul class="mid">
+					<li><a href="#/home" ng-click="setString(0)" id="biz-link" ng-click="setCurrentStep(0)">for biz</a></li>
+					<li><a href="#/home" ng-click="setString(1)" id="me-link" ng-click="setCurrentStep(0)">for me</a></li>
+					<li><a href="" id="company-link" class="{{setCurrentClass()}}" ng-class="{'active':isCurrentStep(0)}" ng-click="setCurrentStep(0)">company</a></li>
+					<li><a href="" id="pricing-link" class="{{setCurrentClass()}}" ng-class="{'active':isCurrentStep(1)}" ng-click="setCurrentStep(1)">pricing</a></li>
+					<li><a href="" id="contact-link" class="{{setCurrentClass()}}" ng-class="{'active':isCurrentStep(2)}" ng-click="setCurrentStep(2);">contact</a></li>
+				</ul>
+				<ul class="right">
+					<li><a href="https://twitter.com/XKLAIMIT" target="_blank"><i class="icon-large icon-twitter"></i></a></li>
+					<li><a href="https://www.facebook.com/XKLAIMIT" target="_blank"><i class="icon-large icon-facebook"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<footer class="secondary-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<ul>
+					<li><a href="http://xklaim.it/tou">Privacy</a></li>
+					<li><a href="http://xklaim.it/tou">Terms &amp; Conditions</a></li>
+					<li>&copyxKlaim All Rights Reserved</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>

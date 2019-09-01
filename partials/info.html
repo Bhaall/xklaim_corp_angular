@@ -1,0 +1,286 @@
+<div ng-switch="getCurrentStep()" ng-animate="'slide'" class="slide-frame-inner" ng-controller="infocarouselCtrl">
+	<div ng-switch-when="one">
+		<div id="infoCarousel" class="carousel slide" data-interval="false">
+			<div class="carousel-inner">
+				<div class="item active one">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1><img src="img/brand.png" class="hidden-xs" /></h1>
+							<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+							<h1 class="main">turn followers into shoppers.</h1>
+							<p>xKlaim activates and amplifies your brand's social media following to drive real-world, in-store sales.</p>
+							<p class="margin-top"><a class="btn btn-large btn-app" href="" ng-click="setString(2); focusInput='true'">GET STARTED</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item two">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1><img src="img/brand.png" class="hidden-xs" /></h1>
+							<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+							<p>xKlaim lets you quickly create offers to activate your followers&mdash;on social networks, on mobile devices&mdash;and drive them in-store.</p>
+							<p class="margin-top"><a class="btn btn-large btn-app" href="" ng-click="setString(2); focusInput=true">GET STARTED</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item three">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1><img src="img/brand.png" class="hidden-xs" /></h1>
+							<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+							<p>The xKlaim app generates a virtual card on mobile devices, usable wherever credit and debit cards are accepted, and sharable with anyone. So your brand's reach is amplified beyond your own social network, into your followers' circles&mdash;and beyond.</p>
+							<p class="margin-top"><a class="btn btn-large btn-app" href="" ng-click="setString(2)">GET STARTED</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item four">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1><img src="img/brand.png" class="hidden-xs" /></h1>
+							<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+							<p>Your xKlaim dashboard displays real-time conversion metrics, so you can track offer redemptions and optimize for even better results.</p>
+							<p class="margin-top"><a class="btn btn-large btn-app" href="" ng-click="setString(2)">GET STARTED</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item five">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1><img src="img/brand.png" class="hidden-xs" /></h1>
+							<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+							<h1>if you want it, xKlaim it.</h1>
+							<p>xKlaim activates and amplifies your brand's social media following to drive real-world, in-store sales. </p>
+							<p class="margin-top"><a class="btn btn-large btn-app" href="https://itunes.apple.com/us/app/okd/id625677744?mt=8" target="_blank">GET THE APP</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-default heronav" role="navigation" active-link>
+			<div class="navbar-collapse">
+				<ul class="nav navbar-nav hidden-xs">
+					<li class="active" data-slide-to="0" data-target="#infoCarousel"><a><img src="img/for-biz-icon.png" /></a></li>
+					<li data-slide-to="1" data-target="#infoCarousel"><a><img src="img/activate-icon.png" /></a></li>
+					<li data-slide-to="2" data-target="#infoCarousel"><a><img src="img/amplify-icon.png" /></a></li>
+					<li data-slide-to="3" data-target="#infoCarousel"><a><img src="img/optimize-icon.png" /></a></li>
+					<li><a ng-click="handleNext(dismiss)"><img src="img/for-me-icon.png" /></a></li>
+				</ul>
+				<ul class="nav navbar-nav hidden-lg hidden-md hidden-sm">
+					<li class="active" data-slide-to="0" data-target="#infoCarousel"><a><img src="img/for-biz-icon-sm.png" ng-src="img/for-biz-icon-sm@2x.png" width="50" height="38" /></a></li>
+					<li data-slide-to="1" data-target="#infoCarousel"><a><img src="img/activate-icon-sm.png" ng-src="img/activate-icon-sm@2x.png" width="50" height="38" /></a></li>
+					<li data-slide-to="2" data-target="#infoCarousel"><a><img src="img/amplify-icon-sm.png" ng-src="img/amplify-icon-sm@2x.png" width="50" height="38" /></a></li>
+					<li data-slide-to="3" data-target="#infoCarousel"><a><img src="img/optimize-icon-sm.png" ng-src="img/optimize-icon-sm@2x.png" width="50" height="38" /></a></li>
+					<li><a ng-click="handleNext(dismiss)"><img src="img/for-me-icon-sm.png" ng-src="img/for-me-icon-sm@2x.png" width="50" height="38" /></a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<div ng-switch-when="two">
+		<div id="youCarousel" class="carousel slide" data-interval="false">
+			<div class="carousel-inner">
+				<div class="item active one">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1><img src="img/brand.png" class="hidden-xs" /></h1>
+							<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+							<h1 class="main">if you want it, xKlaim it.</h1>
+							<p>xKlaim activates and amplifies your brand's social media following to drive real-world, in-store sales. </p>
+							<p class="margin-top"><a class="btn btn-large btn-app" href="https://itunes.apple.com/us/app/okd/id625677744?mt=8" target="_blank">GET THE APP</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item two">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1><img src="img/brand.png" class="hidden-xs" /></h1>
+							<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+							<p>xKlaim lets you get instant, must-have offers from your favorite brands. You can even ask family and friends to help fund a purchase!</p>
+							<p class="margin-top"><a class="btn btn-large btn-app" href="" ng-click="setString(2)">GET STARTED</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item three">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1><img src="img/brand.png" class="hidden-xs" /></h1>
+							<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+							<p>Get what you want instantly: xKlaim generates a virtual card, which can be used wherever credit and debit cards are accepted.</p>
+							<p class="margin-top"><a class="btn btn-large btn-app" href="" ng-click="setString(2)">GET STARTED</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item four">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1><img src="img/brand.png" class="hidden-xs" /></h1>
+							<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+							<p>Once you've got it, xKlaim it: Share your favorite offers with your favorite peeps on Facebook, Twitter or anyone from your contacts!</p>
+							<p class="margin-top"><a class="btn btn-large btn-app" href="" ng-click="setString(2)">GET STARTED</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item five">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1><img src="img/brand.png" class="hidden-xs" /></h1>
+							<h1><img src="img/brand-sm.png" class="hidden-lg hidden-md hidden-sm" ng-src="img/brand-sm@2x.png" width="129" height="21" /></h1>
+							<h1>turn followers into shoppers.</h1>
+							<p>xKlaim activates and amplifies your brand's social media following to drive real-world, in-store sales.</p>
+							<p class="margin-top"><a class="btn btn-large btn-app" href="https://itunes.apple.com/us/app/okd/id625677744?mt=8" target="_blank">GET THE APP</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-default heronav" role="navigation" active-link>
+			<div class="navbar-collapse">
+				<ul class="nav navbar-nav hidden-xs">
+					<li class="active" data-slide-to="0" data-target="#youCarousel"><a><img src="img/for-me-icon.png" /></a></li>
+					<li data-slide-to="1" data-target="#youCarousel"><a><img src="img/want-icon.png" /></a></li>
+					<li data-slide-to="2" data-target="#youCarousel"><a><img src="img/get-icon.png" /></a></li>
+					<li data-slide-to="3" data-target="#youCarousel"><a><img src="img/share-icon.png" /></a></li>
+					<li><a ng-click="handlePrevious()"><img src="img/for-biz-icon.png" /></a></li>
+				</ul>
+				<ul class="nav navbar-nav hidden-lg hidden-md hidden-sm">
+					<li class="active" data-slide-to="0" data-target="#youCarousel"><a><img src="img/for-me-icon-sm.png" ng-src="img/for-me-icon-sm@2x.png" width="50" height="38" /></a></li>
+					<li data-slide-to="1" data-target="#youCarousel"><a><img src="img/want-icon-sm.png" ng-src="img/want-icon-sm@2x.png" width="50" height="38" /></a></li>
+					<li data-slide-to="2" data-target="#youCarousel"><a><img src="img/get-icon-sm.png" ng-src="img/get-icon-sm@2x.png" width="50" height="38" /></a></li>
+					<li data-slide-to="3" data-target="#youCarousel"><a><img src="img/share-icon-sm.png" ng-src="img/share-icon-sm@2x.png" width="50" height="38" /></a></li>
+					<li><a ng-click="handlePrevious()"><img src="img/for-biz-icon-sm.png" ng-src="img/for-biz-icon-sm@2x.png" width="50" height="38" /></a></li>
+				</ul>
+			</div>
+		</nav>
+
+	</div>
+</div>
+
+
+<div ng-switch="getCurrentPage()" ng-animate="'{{slideDir}}'" class="slide-frame-under" ng-controller="carouselCtrl" ng-swipe-left="slideNextStep()" ng-swipe-right="slidePrevStep()">
+	<div ng-switch-when="one">
+		<div class="container main-container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="text-center">about xKlaim</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="container info">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="text-center">"xKlaim is defining the next great evolution of the mobile and social media market:<br /> Social Consumer Activation."</h2>
+
+					<p class="padded">Like most great ideas, xKlaim was born when its founder, Atif, hit his head on the side of the bathroom sink. And while our technology platform isn't quite time travel, we think it's still pretty cool. To bring xKlaim to life, he assembled a rag tag team of tech, design, creative, and business warriors. We know what you're thinking... Atif's Eleven, right? Correctamundo! </p>
+
+					<p class="padded">OK, we understand that if you're a member of the press, you want a company description that won't get you yelled at by your editor. If so, here's what you're looking for: </p>
+
+					<h3 class="padded">xKlaim is a more rewarding way <span>for businesses and customers to connect with each other. Until now, brands have invested heavily to build their followings online. With xKlaim, businesses and their customers now have a direct, real-time way to bridge the divide between their online and offline interactions. As a company, xKlaim is dedicated to the development of technologies that simplify how we interact with each other, with the world's biggest brands&mdash;and connect us to our favorite places to get the stuff we want.<span></h3>
+
+					<p class="padded">Together, xKlaim is defining the next great evolution of the mobile and social media market: Social Consumer Activation.</p>
+
+				</div>
+			</div>
+		</div>
+	</div><!-- step1 -->
+
+	<div ng-switch-when="two">
+		<div class="container main-container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="text-center">what does it cost?</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="container info">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>Our pricing is simple&mdash;it's Free.</h2>
+					<p class="padded">We realize some companies use that term somewhat... well, freely. So here's what we mean:</p>
+					<ul class="list">
+						<li>xKlaim costs nothing to download. Nada. Zilch. Diddly squat.</li>
+						<li>We don't charge any fees for you to use it either. Use xKlaim to ask your friends, family or brands to help fund a purchase. Go ahead. Snap it, share it. Have fun with it.</li>
+					</ul>
+
+					<p class="padded">If you're a global brand (or aspiring to be one) with like a gazillion fans and followers, and you've got agencies&mdash;you know, just like on Mad Men&mdash;planning campaigns to conquer the social media marketing frontier, you'd best get in touch with us to put together a pilot program that will best achieve your goals. We even have a really nifty <a href="" ng-click="setCurrentStep(2)">Contact Us</a> form.</p>
+
+				</div>
+			</div>
+		</div>
+	</div><!-- step2 -->
+
+	<div ng-switch-when="three">
+
+		<div class="container main-container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="text-center">get started with xKlaim</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="container contact">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="row">
+						<div class="col-sm-4 col-md-5">
+							<p>Want to start turning your followers into shoppers?<br /><br />
+							Got a question, comment or just curious to learn more? Just shoot us your details and we'll get right back to you.</p>
+						</div>
+						<div class="col-sm-8 col-md-7 border-left" ng-controller="ContactController" >
+							<div class="row">
+								<div class="col-sm-6">
+									<alert ng-repeat="alert in alerts" type="alert.type" close="closeAlert($index)">
+										<span ng-bind-html="alert.msg"></span>
+									</alert>
+								</div>
+							</div>
+							<form id="contactForm" name="contactForm" class="form-inline" method="post" role="form" novalidate ng-submit="submit()">
+								<fieldset>
+									<div class="form-group">
+										<div class="input">
+											<input type="text" class="form-control" name="name" id="name" placeholder="First and Last Name" ng-model="contact.name" ng-minlength="3" required focus-me />
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="input">
+											<input type="text" class="form-control" name="company" id="company" placeholder="Company" ng-model="contact.company" />
+										</div>
+									</div>
+								</fieldset>
+								<fieldset>
+									<div class="form-group">
+										<div class="input">
+											<input type="email" class="form-control" name="email" id="email" placeholder="Email" ng-model="contact.email" required />
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="input">
+											<input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone" ng-model="contact.phone" />
+										</div>
+									</div>
+								</fieldset>
+								<fieldset>
+									<div class="">
+										<div class="input">
+											<textarea class="form-control col-md-3" id="comment" name="comment" placeholder="Comment" rows="3" ng-model="contact.comment"></textarea>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset>
+									<button class="btn btn-submit" type="submit" ng-disabled="contactForm.$invalid">SEND</button>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div ng-include src='"partials/footer.html"'></div>
